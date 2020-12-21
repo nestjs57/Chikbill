@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!--        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/colorPrimaryDark2</item>-->
+        <!--        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>-->
+
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimary</item>
+
+        <!--        font-->
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="android:fontFamily">@font/sukhumvit_set_semi_bold</item>
+
+
+    </style>
+
+    <style name="generalnotitle" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>   <!-- //this -->
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/sukhumvit_set_semi_bold</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/sukhumvit_set_semi_bold</item>
+    </style>
+
+
+    <!--    Bottom Sheet Dialog-->
+
+    <style name="BottomSheet" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@drawable/border_radius_background_layout</item>
+    </style>
+
+    <style name="SheetDialog" parent="BaseBottomSheetDialog"></style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="saveInputBottomSheetStyle" parent="BaseBottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--    End Bottom Sheet Dialog-->
+
+</resources>

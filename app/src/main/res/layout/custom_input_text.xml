@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        app:boxBackgroundColor="@color/colorWhite"-->
+<!--        android:background="@drawable/bg_radius_input_text">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="ราคารวม (รวมค่าส่ง)"-->
+<!--            android:textSize="14dp"-->
+<!--            android:outlineSpotShadowColor="@color/colorBorder" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="กรอกราคารวม (รวมค่าส่ง)"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/bg_radius_input_text"/>
+</RelativeLayout>
